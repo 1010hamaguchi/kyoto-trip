@@ -253,3 +253,193 @@ footer {
     font-size: 1.05em;
     font-weight: 500;
 }
+
+/* レスポンシブデザイン：スマートフォン対応 */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+        line-height: 1.7;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 25px 20px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    header {
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+
+    header::after {
+        font-size: 1.2em;
+        bottom: -12px;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 12px;
+        letter-spacing: 0.03em;
+    }
+
+    .date-info {
+        font-size: 1.1em;
+        margin-bottom: 6px;
+    }
+
+    .location {
+        font-size: 1em;
+        letter-spacing: 0.05em;
+    }
+
+    .section {
+        margin-bottom: 35px;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        padding-left: 15px;
+        border-left: 4px solid #d2691e;
+    }
+
+    .day-title {
+        font-size: 1.2em;
+        margin: 20px 0 15px 0;
+        padding: 12px 15px;
+        border-radius: 10px;
+    }
+
+    .schedule-item {
+        margin: 10px 0;
+        padding: 12px 15px;
+        border-radius: 10px;
+        border-left: 3px solid #d2691e;
+    }
+
+    .schedule-item:hover {
+        transform: translateX(3px);
+    }
+
+    .time {
+        display: block;
+        margin-bottom: 5px;
+        margin-right: 0;
+        min-width: auto;
+        font-size: 1em;
+    }
+
+    .activity {
+        display: block;
+        font-size: 0.95em;
+    }
+
+    .sub-item {
+        margin-left: 15px;
+        margin-top: 6px;
+        font-size: 0.9em;
+    }
+
+    .details {
+        margin-top: 12px;
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    .details li {
+        font-size: 0.9em;
+        margin: 6px 0;
+    }
+
+    .cost-item {
+        margin: 10px 0;
+        padding: 12px 15px;
+        border-radius: 10px;
+        border-left: 3px solid #cd5c5c;
+    }
+
+    .cost-item:hover {
+        transform: translateX(3px);
+    }
+
+    .cost-category {
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+
+    .cost-detail {
+        margin-left: 10px;
+        font-size: 0.95em;
+    }
+
+    .total-cost {
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 12px;
+        border: 2px solid #d2691e;
+    }
+
+    .total-cost h3 {
+        font-size: 1.3em;
+        margin-bottom: 12px;
+    }
+
+    .total-amount {
+        font-size: 1.6em;
+        letter-spacing: 0.03em;
+    }
+
+    footer {
+        margin-top: 35px;
+        padding-top: 20px;
+        font-size: 0.95em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 15px 5px;
+    }
+
+    .container {
+        padding: 20px 15px;
+        border-radius: 12px;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    .date-info {
+        font-size: 1em;
+    }
+
+    .section-title {
+        font-size: 1.3em;
+        padding-left: 12px;
+    }
+
+    .day-title {
+        font-size: 1.1em;
+        padding: 10px 12px;
+    }
+
+    .schedule-item,
+    .cost-item {
+        padding: 10px 12px;
+    }
+
+    .time {
+        font-size: 0.95em;
+    }
+
+    .activity {
+        font-size: 0.9em;
+    }
+
+    .total-amount {
+        font-size: 1.4em;
+    }
+}
